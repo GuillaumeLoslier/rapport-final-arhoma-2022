@@ -124,3 +124,6 @@ div.photo-container a:hover span {
     visibility: visible;
 }
 
+.btn-sm {
+padding: 0;
+}
