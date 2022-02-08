@@ -1,0 +1,35 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://gist.githubusercontent.com/GuillaumeLoslier/316d1f30a23778ca1705ee9e12c3d0cf/raw/cbc23792ed6f7e0c214cb87f814dd31e6a9e9af2/lesions.csv"},
+  "layer": [{
+    "mark": "bar",   
+      "encoding": {
+      "x": {
+        "field": "Type de lésion professionnelle",
+        "type": "nominal",
+        "title": "Type de lésion professionnelle"
+          },
+      "y": {
+            "field": "Nombre de lésions",
+      "type": "quantitative",
+       "title": "Nombre de lésions professionnelle"
+
+          },    
+      "color": {
+      "field": "Département",
+      "type": "nominal",
+      "sort": "x",
+      "scale": {
+        "domain": ["Boulangerie", "Cuisine", "Emballeur", "Entretien ménager", "Gérant de plancher", "Livraison", "Tourier-pâtissier"],
+        "range": ["#e7ba52", "#c7c7c7", "#aec7e8", "#1f77b4", "#9467bd", "#DE6E4B", "#7FD1B9", "#7A6563"]
+      },
+      "title": "Département"
+    }
+  } 
+
+  
+
+    }]
+
+}
